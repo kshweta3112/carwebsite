@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Car website running on Elastic Beanstalk 🚗');
+  res.send('Car website is running 🚗');
 });
 
 const port = process.env.PORT || 3000;
