@@ -3,15 +3,16 @@ pipeline {
 
     stages {
 
-       stage('Clone') {
-    steps {
-        git branch: 'main', url: 'https://github.com/kshweta3112/carwebsite.git'
-    }
+        stage('Clone') {
+            steps {
+                git branch: 'main',
+                url: 'https://github.com/kshweta3112/carwebsite.git'
+            }
         }
 
         stage('Build') {
             steps {
-                sh 'echo Build Successful'
+                echo 'Build Successful'
             }
         }
 
